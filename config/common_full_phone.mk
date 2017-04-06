@@ -42,5 +42,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libemoji
 
+# Turbo app
+PRODUCT_COPY_FILES +=  \
+    vendor/androidx/prebuilt/common/priv-app/Turbo.apk:system/priv-app/Turbo/Turbo.apk
+
 # Inherit common androidx stuff
 $(call inherit-product, vendor/androidx/config/common.mk)

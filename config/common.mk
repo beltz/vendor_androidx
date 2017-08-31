@@ -12,3 +12,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/androidx/overlay/common
+
+# Fix Dialer
+PRODUCT_COPY_FILES +=  \
+    vendor/androidx/prebuilt/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml 

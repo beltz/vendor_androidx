@@ -21,3 +21,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/androidx/overlay/common
 
 # Google sounds
 include vendor/androidx/google/GoogleAudio.mk
+
+# Disable Rescue Party
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.disable_rescue=true

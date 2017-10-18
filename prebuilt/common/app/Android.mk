@@ -1,3 +1,4 @@
+
 # Copyright (C) 2016 The Pure Nexus Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,22 +16,13 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := Turbo
-LOCAL_SRC_FILES := Turbo.apk
-LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE := GoogleWallpapers
 LOCAL_MODULE_TAGS := optional
-LOCAL_CERTIFICATE := platform
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := PixelLauncher
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := PixelLauncher.apk
+LOCAL_SRC_FILES := GoogleWallpapers.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3
+LOCAL_OVERRIDES_PACKAGES := \
+    WallpaperPicker \
+    WallpaperCropper
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)

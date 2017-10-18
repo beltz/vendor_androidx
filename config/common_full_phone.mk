@@ -35,7 +35,6 @@ PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     Development \
     LatinIME \
-    Launcher3 \
 #    ThemeInterfacer
 
 # Emoji
@@ -45,6 +44,11 @@ PRODUCT_PACKAGES += \
 # Turbo app
 PRODUCT_COPY_FILES +=  \
     vendor/androidx/prebuilt/common/priv-app/Turbo.apk:system/priv-app/Turbo/Turbo.apk
+
+# Prebuilt Nexus Launcher
+PRODUCT_COPY_FILES +=  \
+    vendor/androidx/prebuilt/common/priv-app/PixelLauncher.apk:system/priv-app/PixelLauncher/PixelLauncher.apk \
+    vendor/androidx/prebuilt/common/app/GoogleWallpapers.apk:system/app/GoogleWallpapers/GoogleWallpapers.apk
 
 # Inherit common androidx stuff
 $(call inherit-product, vendor/androidx/config/common.mk)

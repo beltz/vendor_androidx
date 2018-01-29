@@ -17,7 +17,4 @@
 
     <bool name="config_nightDisplayAvailable">true</bool>
 
-    <!-- Wallpaper cropper package. Used as the default cropper if the active launcher doesn't handle wallpaper cropping. -->
-    <string name="config_wallpaperCropperPackage" translatable="false">com.google.android.apps.wallpaper</string>
-
 </resources>

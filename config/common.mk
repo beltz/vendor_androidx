@@ -14,9 +14,30 @@ PRODUCT_BOOT_JARS += \
 
 # Themes
 PRODUCT_PACKAGES += \
+    AmberAccent \
+    BlackAccent \
+    BlueAccent \
+    BlueGreyAccent \
+    BrownAccent \
+    CyanAccent \
+    DeepOrangeAccent \
+    DeepPurpleAccent \
     DuiDarkTheme \
+    GreenAccent \
+    GreyAccent \
+    IndigoAccent \
+    LightBlueAccent \
+    LightGreenAccent \
+    LimeAccent \
+    OrangeAccent \
+    PinkAccent \
+    PurpleAccent \
+    RedAccent \
     SystemDarkTheme \
-    SystemDarkTheme
+    SystemDarkTheme \
+    TealAccent \
+    YellowAccent \
+    WhiteAccent
 
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/androidx/overlay/common

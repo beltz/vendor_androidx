@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
     CyanAccent \
     DeepOrangeAccent \
     DeepPurpleAccent \
-    DuiDarkTheme \
+    SystemUIDarkTheme \
     GreenAccent \
     GreyAccent \
     IndigoAccent \
